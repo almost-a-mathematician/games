@@ -1,12 +1,12 @@
 import time
-import  pygame 
+import pygame 
 from constants import carImg, carImg2, black, display_width, display_height, gameDisplay
 
 
 #счетчик
-def things_dodget(count):
+def things_dodged(count):
     font = pygame.font.SysFont(None, 25)
-    text = font.render("Purina ran: "+str(count), True, black)
+    text = font.render("Purina ran: " + str(count), True, black)
     gameDisplay.blit(text,(0, 0))
 
 
@@ -60,6 +60,5 @@ def message_display(text):
     
     from eight import game_loop
     game_loop()
-
 
 
